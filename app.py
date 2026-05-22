@@ -10,6 +10,10 @@ def home():
 def robots():
     return send_from_directory(app.static_folder, 'robots.txt')
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
+
 @app.route('/google7836419afd22a9e3.html')
 def google_verification():
     return send_from_directory('.', 'google7836419afd22a9e3.html')
