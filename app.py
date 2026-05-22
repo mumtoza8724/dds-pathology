@@ -10,9 +10,9 @@ def home():
 def robots():
     return send_from_directory(app.static_folder, 'robots.txt')
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-from flask import send_from_directory
 @app.route('/google7836419afd22a9e3.html')
 def google_verification():
-    return send_from_directory('', 'google7836419afd22a9e3.html')
+    return send_from_directory('.', 'google7836419afd22a9e3.html')
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
